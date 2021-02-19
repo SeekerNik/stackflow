@@ -1,13 +1,30 @@
 const express = require("express");
-
+const bodyParser = require("body-parser");
 const app = express();
-const login = require("./routes/login");
-app.use("/login", login);
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
 
-app.get("/hello", (req, res) => {
-  res.send("<h1>hello world<h1>");
+app.use(bodyParser.json());
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/login.html");
 });
 
+app.post("/login", (req, res, data) => {
+  const username = req.body.name;
+  const password = req.body.password;
+
+  if (username === "nik") {
+    if (password === "nik") {
+      res.send("Work in Progress");
+      res.end();
+    }
+  }
+  res.end("Error occured");
+});
 app.listen(5000, (req, res) => {
   console.log("the server is running at port 5000");
 });

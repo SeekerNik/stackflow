@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      .container {
+        padding: 10%;
+      }
+      .container form {
+        margin: 5% auto;
+        text-align: center;
+      }
+
+      .container form input {
+        font-size: 16px;
+        margin: 10px 16px;
+        padding: 10px;
+      }
+
+      .container label {
+        font-size: 1.5rem;
+      }
+
+      .container button {
+        border-style: none;
+        text-align: center;
+        padding: 10px 16px;
+        font-size: 1rem;
+        margin: 16px auto;
+        background-color: #4caf50;
+        color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/login" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="name" placeholder="Enter your Username" />
+        <br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
