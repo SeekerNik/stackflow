@@ -1,0 +1,38 @@
+.content {
+  margin-left: 22%;
+  padding: 10px;
+}
+
+.question h2 {
+  display: inline-block;
+  color: #3c4146;
+  text-decoration: none;
+}
+
+.question button {
+  margin-left: 20%;
+  background-color: #169fff;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.question{
+    border-bottom: 1px #bbc0c4 solid;
+}
+
+.content p{
+ width: 50%;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}

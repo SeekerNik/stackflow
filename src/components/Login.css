@@ -1,42 +1,27 @@
 .container {
-  position: relative;
-  height: 100%;
+  padding: 10%;
 }
-.content {
-  margin-left: 22%;
+.container form {
+  margin: 5% auto;
+  text-align: center;
+}
+
+.container form input {
+  font-size: 16px;
+  margin: 10px 16px;
   padding: 10px;
 }
 
-.question h2 {
-  display: inline-block;
-  color: #3c4146;
-  text-decoration: none;
+.container label {
+  font-size: 1.5rem;
 }
 
-.question button {
-  margin-left: 20%;
-  background-color: #169fff; /* Green */
-  border: none;
-  color: white;
-  padding: 8px 10px;
+.container button {
+  border-style: none;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-}
-
-.question{
-    border-bottom: 1px #bbc0c4 solid;
-}
-
-.content p{
- width: 50%;
-}
-
-code {
-  font-family: Consolas,"courier new";
-  color: crimson;
-  background-color: #f1f1f1;
-  padding: 2px;
-  font-size: 105%;
+  padding: 10px 16px;
+  font-size: 1rem;
+  margin: 16px auto;
+  background-color: #4caf50;
+  color: beige;
 }
